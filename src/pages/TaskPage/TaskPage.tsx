@@ -9,7 +9,6 @@ import TaskItem from "../../components/TaskItem/TaskItem";
 const TaskPage = () => {
   const [taskInput, setTaskInput] = useState<string>("");
   const { addTask, taskList, deleteTask, completedTask } = useTaskStore();
-  console.log(taskList);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
